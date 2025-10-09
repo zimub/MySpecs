@@ -42,10 +42,10 @@ s.frameworks = 'UIKit','Foundation','AdSupport','CoreMotion','AppTrackingTranspa
 s.libraries = 'c++','bz2','c++abi','resolv.9','sqlite3.0','sqlite3','xml2.2','xml2'
 
 s.dependency 'Alamofire', '~> 5.9.1'
-# s.dependency 'MBProgressHUD', '1.2.0'
+s.dependency 'MBProgressHUD', '1.2.0'
 # s.dependency 'BrotliKit', '1.0.2'
 s.dependency 'AdjustSignature', '3.35.2'
-s.dependency 'Sentry', '1.7.2'
+# s.dependency 'Sentry', '1.7.2'
 s.dependency 'FBSDKCoreKit_Basics', '17.0.0'
 s.dependency 'FBSDKCoreKit', '17.0.0'
 s.dependency 'FirebaseAnalytics', '11.3.0'
@@ -65,7 +65,7 @@ s.dependency 'FirebaseSharedSwift', '11.3.0'
 s.dependency 'ThinkingDataCore', '1.0.2'
 s.dependency 'ThinkingSDK', '3.0.2'
 s.dependency 'GoogleUtilities','8.0.2'
-s.dependency 'TTOpenPass', '2.1.2-swift'
+# s.dependency 'TTOpenPass', '2.1.2-swift'
 
 
 
