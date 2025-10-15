@@ -34,10 +34,7 @@ Pod::Spec.new do |s|
   # 使用 xcframework
 #  s.vendored_frameworks = '**/*.framework'  # 自动包含所有 framework
   s.vendored_frameworks = [
-    'MyTTAd/MyTTAd.framework',
-    'Alamofire/Alamofire.framework',
-    'MBProgressHUD/MBProgressHUD.framework',
-    'BrotliKit/BrotliKit.framework',
+    'MyTTAd/Release-iphoneos/Alamofire.framework',
     # 明确列出所有需要的框架...
     '**/*.framework'
   ]
