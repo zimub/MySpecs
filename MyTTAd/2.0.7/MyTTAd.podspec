@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   
   # 关键修改：指向你的 Nexus 仓库
   s.source           = {
-    :http => 'http://nexus.playnexx.net/repository/ios_libs/MyTTAd/2.0.6/MyTTAd.zip',
+    :http => 'http://nexus.playnexx.net/repository/ios_libs/MyTTAd/2.0.7/MyTTAd.zip',
     :type => 'zip'
   }
   
