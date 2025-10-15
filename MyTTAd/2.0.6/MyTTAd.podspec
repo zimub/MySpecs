@@ -44,5 +44,8 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit','Foundation','AdSupport','CoreMotion','AppTrackingTransparency'
   s.libraries = 'c++','bz2','c++abi','resolv.9','sqlite3.0','sqlite3','xml2.2','xml2'
   s.dependency 'SnapKit' , '5.6.0'
+  s.dependency 'FBSDKCoreKit_Basics', '17.0.0'
+  s.dependency 'FBSDKCoreKit', '17.0.0'
+  s.dependency 'FirebaseAnalytics', '11.3.0'
 
 end
