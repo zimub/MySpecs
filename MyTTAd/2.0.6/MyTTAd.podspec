@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   }
 
   s.ios.deployment_target = '13.0'
-  s.swift_versions = ['5.0', '6.0']
+#  s.swift_versions = ['5.0', '6.0']
   
   # 架构配置
   s.user_target_xcconfig = {
