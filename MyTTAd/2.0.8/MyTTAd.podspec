@@ -22,14 +22,14 @@ Pod::Spec.new do |s|
   #  s.swift_versions = ['5.0', '6.0']
   
   # 架构配置
-  s.user_target_xcconfig = {
-    'IPHONEOS_DEPLOYMENT_TARGET' => '13.0',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  s.pod_target_xcconfig = {
-    'IPHONEOS_DEPLOYMENT_TARGET' => '13.0',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
+#  s.user_target_xcconfig = {
+#    'IPHONEOS_DEPLOYMENT_TARGET' => '13.0',
+#    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+#  }
+#  s.pod_target_xcconfig = {
+#    'IPHONEOS_DEPLOYMENT_TARGET' => '13.0',
+#    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+#  }
   
   # 使用 xcframework
   #  s.vendored_frameworks = '**/*.framework'  # 自动包含所有 framework
@@ -43,7 +43,10 @@ s.vendored_frameworks = [
 # 明确列出所有需要的框架...
 '*/*.framework'
 ]
-  s.static_framework = true
+
+s.libraries = 'c++','bz2','c++abi','resolv.9','sqlite3.0','sqlite3','xml2.2','xml2'
+
+#  s.static_framework = true
   
   # 系统依赖
   s.frameworks = 'UIKit','Foundation','AdSupport','CoreMotion','AppTrackingTransparency'
