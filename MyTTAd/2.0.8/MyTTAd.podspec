@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
 #  ]
 
 s.vendored_frameworks = [
-#    'MyTTAd/Release-iphoneos/Alamofire.framework',
+'MyTTAd/libs/Alamofire.framework',
 # 明确列出所有需要的框架...
 '*/*.framework'
 ]
