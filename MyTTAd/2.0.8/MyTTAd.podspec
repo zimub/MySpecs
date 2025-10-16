@@ -40,11 +40,6 @@ Pod::Spec.new do |s|
 #  ]
 
 s.vendored_frameworks = [
-'MyTTAd/libs/Alamofire.framework',
-
-'MyTTAd/libs/TTAd.framework',
-'MyTTAd/libs/TTPayment.framework',
-
 # 明确列出所有需要的框架...
 '*/*.framework'
 ]
