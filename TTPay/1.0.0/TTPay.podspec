@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'tiantian' => 'panguowen@playdayy.com' }
   s.source           = {
-    :http => 'http://nexus.playnexx.net/repository/ios_libs/payLibs/1.0.0/payLibs.zip',
+    :http => "http://nexus.playnexx.net/repository/ios_libs/payLibs/#{s.version}/payLibs.zip",
     :type => 'zip'
   }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
@@ -36,10 +36,13 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = [
   # 明确列出所有需要的框架...
     '**/*.framework'
-  ]
+    ]
   
   s.libraries = 'c++','bz2','c++abi','resolv.9','sqlite3.0','sqlite3','xml2.2','xml2'
   
+  s.resources = [
+    'TTPaymentResources.bundle'
+  ]
   # TODO: 没有找到资源路径
 #  s.resource_bundles = {
 #    'TTPay' => ['TTPay//Assets/*.{xib,png,xcassets,nib,bundle,csv,lproj}']
